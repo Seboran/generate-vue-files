@@ -18,7 +18,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
-        run: pnpm install -P
+        run: pnpm install --frozen-lockfile
       - name: Build
         run: pnpm run build
       - name: Publish
