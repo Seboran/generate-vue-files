@@ -8,8 +8,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "tsc",
-    "prepublishOnly": "pnpm run build",
-    "publish": "pnpm publish"
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
