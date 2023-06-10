@@ -1,14 +1,15 @@
 {
   "name": "generate-vue-files",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "dist/playground.js",
   "license": "MIT",
   "scripts": {
     "start": "nodemon src/playground.ts --watch src",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "tsc",
-    "prepublish": "ctix create --overwrite --useRootDir && tsc"
+    "prepublishOnly": "pnpm run build",
+    "publish": "pnpm publish"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
